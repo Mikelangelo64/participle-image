@@ -1,0 +1,98 @@
+@mixin text-heading-styles {
+  margin: 0;
+  font-family: $font-family-heading;
+  font-weight: 700;
+  line-height: 140%;
+  text-transform: uppercase;
+}
+
+@mixin text-heading-1 {
+  @include text-heading-styles;
+  word-break: break-word;
+  color: var(--color-grey);
+
+  @include viewport-desktop {
+    font-size: px-to-rem(96);
+  }
+  @include viewport-tablet {
+    font-size: px-to-rem(82);
+  }
+  @include viewport-phone {
+    font-size: px-to-rem(54);
+  }
+
+  span {
+    display: block;
+    font-family: $font-family;
+    font-weight: 400;
+    line-height: 140%;
+    color: var(--color-white);
+    
+    @include viewport-desktop {
+      font-size: px-to-rem(32);
+    }
+    @include viewport-tablet {
+      font-size: px-to-rem(28);
+    }
+    @include viewport-phone {
+      font-size: px-to-rem(24);
+    }
+  }
+}
+
+@mixin text-heading-2 {
+  @include text-heading-styles;
+
+  @include viewport-desktop {
+    font-size: px-to-rem(46);
+  }
+  @include viewport-tablet {
+    font-size: px-to-rem(40);
+  }
+  @include viewport-phone {
+    line-height: 126%;
+    font-size: px-to-rem(30);
+  }
+
+  span {
+    color: var(--color-blue-100)
+  }
+}
+
+@mixin text-heading-3 {
+  @include text-heading-styles;
+  font-weight: 600;
+  line-height: 102%;
+
+  @include viewport-desktop {
+    font-size: px-to-rem(28);
+  }
+  @include viewport-tablet {
+    font-size: px-to-rem(28);
+  }
+  @include viewport-phone {
+    font-size: px-to-rem(24);
+  }
+}
+
+@mixin text-heading-4 {
+  @include text-heading-styles;
+
+  @include viewport-desktop {
+    font-size: px-to-rem(30);
+  }
+  @include viewport-tablet {
+    font-size: px-to-rem(24);
+  }
+  @include viewport-phone {
+    font-size: px-to-rem(20);
+  }
+}
+
+@mixin text-heading-5 {
+  @include text-heading-4;
+}
+
+@mixin text-heading-6 {
+  @include text-heading-5;
+}

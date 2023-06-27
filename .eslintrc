@@ -1,0 +1,26 @@
+{
+  "extends": ["airbnb-base", "plugin:prettier/recommended"],
+  "plugins": ["prettier"],
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "tabWidth": 2,
+        "useTabs": false,
+        "singleQuote": true,
+        "endOfLine": "auto"
+      }
+    ],
+    "quotes": ["error", "single"],
+    "import/no-unresolved": [2, { "caseSensitive": false }]
+    //"linebreak-style": 0,
+    //"global-require": 0,
+    //"eslint linebreak style": [0, "error", "windows"],
+    // "import/prefer-default-export": 0,
+    //"comma-dangle": "off"
+    // "no-underscore-dangle": ["error", {"allowAfterThis": true, "allowAfterSuper": true}]
+  }
+}

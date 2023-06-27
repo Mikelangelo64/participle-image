@@ -1,0 +1,36 @@
+@mixin reset-first-child-margin {
+  &:first-child {
+    margin-top: 0 !important;
+  }
+}
+
+@mixin reset-last-child-margin {
+  &:last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+@mixin reset-button {
+  appearance: none;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+@mixin reset-input {
+  appearance: none;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  outline: none;
+  resize: none;
+}
+
+@mixin reset-ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

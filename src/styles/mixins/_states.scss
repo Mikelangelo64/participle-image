@@ -1,0 +1,23 @@
+@mixin hover() {
+  &:hover {
+    @content;
+  }
+}
+
+@mixin non-mobile-hover () {
+  @include non-mobile-device () {
+    @include hover {
+      @content;
+    }
+  }
+}
+
+@mixin hover-focus-visible {
+  &:hover {
+    @content;
+  }
+
+  &:focus-visible {
+    @content;
+  }
+}

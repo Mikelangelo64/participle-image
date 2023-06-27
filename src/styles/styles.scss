@@ -1,0 +1,54 @@
+@import 'normalize.css/normalize.css';
+@import './base';
+@import './settings';
+@import './fonts';
+
+// @import 'vevet/src/sass/components/scroll/scrollbar';
+// @import 'vevet/src/sass/components/loading/preloader';
+
+@import './colors';
+@import './common';
+@import './wrap';
+
+html,
+body {
+  overflow-x: hidden;
+  line-height: 140%;
+
+  &.lock {
+    overflow: hidden;
+  }
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  @include reset-ul;
+}
+
+.controls {
+  position: absolute;
+  z-index: 1;
+}
+
+.warp {
+  padding: 10px;
+  font-size: 30px;
+  margin: 20px;
+}
+
+img {
+  display: none;
+}
+
+//templates
+@import './layout/canvas';

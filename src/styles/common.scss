@@ -1,0 +1,32 @@
+html,
+body {
+  //@include hide-scroll-bars;
+}
+
+html {
+  font-family: $font-family;
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: 300;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+input,
+textarea,
+button,
+select {
+  font-family: $font-family;
+}
+
+* {
+  text-size-adjust: 100%;
+  
+  @include mobile-device (false) {
+    outline: none;
+  }
+}
